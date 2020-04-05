@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Informatica Projecten</title>
+    <link rel="stylesheet" href="dist/css/style.css">
   </head>
   <body>
     <div class="grid-container">
