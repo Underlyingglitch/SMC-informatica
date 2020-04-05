@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
+  grid-template-rows: 0.6fr 1.4fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Header Header Header Login" "Games Games Games Online" "Games Games Games Online"
+}
+
+.Header { grid-area: Header;
+  background-color: #d67400;
+}
+
+.Login { grid-area: Login; }
+
+.Online { grid-area: Online; }
+
+.Games { grid-area: Games; }
