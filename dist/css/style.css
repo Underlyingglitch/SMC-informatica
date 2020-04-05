@@ -6,7 +6,9 @@
   grid-template-areas: "Header Header Header Login" "Games Games Games Online" "Games Games Games Online"
 }
 
-.Header { grid-area: Header; }
+.Header { grid-area: Header;
+  background-color: #d67400;
+}
 
 .Login { grid-area: Login; }
 
