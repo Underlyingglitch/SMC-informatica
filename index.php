@@ -7,7 +7,7 @@
   <body>
     <h1>Informatica Projecten</h1>
     <ul>
-      <li><a href="yahtzee">Yahtzee</a></li>
+      <li><a href="5000en">5000en</a></li>
     </ul>
   </body>
 </html>
