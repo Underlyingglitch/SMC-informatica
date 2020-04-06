@@ -16,7 +16,7 @@ $(document).ready(function(){
               count++;
       }
       if(diceArray.includes(eyes)){
-          $('#status').html("you rolled"+count+eyes+"'s");
+          alert("you rolled"+count+eyes+"'s");
       }
     }
     checkRoll("1");
