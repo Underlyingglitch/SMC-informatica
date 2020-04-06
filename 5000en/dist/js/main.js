@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  function rollDice() {
+  $('#rollDice').on('click', function(){
     var d1 = Math.floor(Math.random() * 6) + 1;
     var d2 = Math.floor(Math.random() * 6) + 1;
     var d3 = Math.floor(Math.random() * 6) + 1;
@@ -31,7 +31,5 @@ $(document).ready(function(){
     $('#die4').html(d4);
     $('#die5').html(d5);
     $('#die6').html(d6);
-  }
-
-  $('#rollDice').on('click', rollDice());
+  });
 });
