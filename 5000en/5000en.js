@@ -38,5 +38,3 @@ function rollDice(){
     die5.innerHTML = d5;
     die6.innerHTML = d6;
 }
-
-helloupdate!
