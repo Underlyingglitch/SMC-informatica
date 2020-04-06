@@ -21,7 +21,7 @@
       <div id="die4" class="dice">1</div>
       <div id="die5" class="dice">1</div>
       <div id="die6" class="dice">1</div>
-      <button onclick="rollDice()">Roll Dice</button>
+      <button id="rollDice">Roll Dice</button>
       <h2 id="status" style="clear:left;"></h2>
     </div>
   </body>
