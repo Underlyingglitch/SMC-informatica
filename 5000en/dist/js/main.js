@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
-  function checkRoll() {
+  function checkRoll(diceArray) {
     for (var x = 1; x < 7; x++) {
       var count = 0;
       for (var i = 0; i < diceArray.length; ++i){
           if(diceArray[i] == x)
               count++;
       }
-      if(diceArray.includes(x)){
-          alert("you rolled"+count+x+"'s");
+      if ($.inArray(x, diceArray) != -1) {
+        alert("you rolled"+count+x+"'s");
       }
     }
   }
@@ -23,7 +23,7 @@ $(document).ready(function(){
     var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
     var diceArray = [d1, d2, d3, d4, d5, d6];
 
-    checkRoll();
+    checkRoll(diceArray);
 
     $('#die1').html(d1);
     $('#die2').html(d2);
