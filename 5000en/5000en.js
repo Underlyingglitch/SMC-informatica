@@ -37,5 +37,4 @@ function rollDice(){
     die4.innerHTML = d4;
     die5.innerHTML = d5;
     die6.innerHTML = d6;
-    status.innerHTML = "You rolled "+diceTotal+".";
 }
