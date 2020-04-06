@@ -14,13 +14,11 @@ function rollDice(){
     var d6 = Math.floor(Math.random() * 6) + 1;
     var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
     var diceArray = [d1, d2, d3, d4, d5, d6];
-    Object.defineProperties(Array.prototype, {
-    count: {
-        value: function(value) {
-            return this.filter(x => x==value).length;
-        }
-      }
-    });
+    var count2 = 0;
+    for (var i = 0; i < array.length; ++i){
+        if(array[i] == 2)
+            count++;
+    }
     die1.innerHTML = d1;
     die2.innerHTML = d2;
     die3.innerHTML = d3;
@@ -29,6 +27,6 @@ function rollDice(){
     die6.innerHTML = d6;
     status.innerHTML = "You rolled "+diceTotal+".";
     if(diceArray.includes(2)){
-        status.innerHTML = diceArray.count(2);
+        status.innerHTML = count2;
     }
 }
