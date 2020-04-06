@@ -27,6 +27,6 @@ function rollDice(){
     die6.innerHTML = d6;
     status.innerHTML = "You rolled "+diceTotal+".";
     if(diceArray.includes(2)){
-        status.innerHTML = count2;
+        status.innerHTML = "you rolled" + count2 + "2's";
     }
 }
