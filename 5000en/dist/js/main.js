@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   function checkRoll(diceArray) {
+    var totalAmount = [];
     for (var x = 1; x < 7; x++) {
       var count = 0;
       for (var i = 0; i < diceArray.length; ++i){
@@ -8,9 +9,10 @@ $(document).ready(function(){
               count++;
       }
       if ($.inArray(x, diceArray) != -1) {
-        alert("you rolled"+count+x+"'s");
+        totalAmount[x] = count;
       }
     }
+    console.log(totalAmount);
   }
 
   $('#rollDice').on('click', function(){
