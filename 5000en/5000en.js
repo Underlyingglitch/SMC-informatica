@@ -17,7 +17,7 @@ function rollDice(){
     var count2 = 0;
     for (var i = 0; i < diceArray.length; ++i){
         if(diceArray[i] == 2)
-            count++;
+            count2++;
     }
     die1.innerHTML = d1;
     die2.innerHTML = d2;
