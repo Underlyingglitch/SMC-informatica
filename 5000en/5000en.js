@@ -25,12 +25,12 @@ function rollDice(){
           status.innerHTML += "you rolled"+count+eyes+"'s";
       }
     }
-    function checkRoll("1")
-    function checkRoll("2")
-    function checkRoll("3")
-    function checkRoll("4")
-    function checkRoll("5")
-    function checkRoll("6")
+    function checkRoll("1");
+    function checkRoll("2");
+    function checkRoll("3");
+    function checkRoll("4");
+    function checkRoll("5");
+    function checkRoll("6");
     die1.innerHTML = d1;
     die2.innerHTML = d2;
     die3.innerHTML = d3;
