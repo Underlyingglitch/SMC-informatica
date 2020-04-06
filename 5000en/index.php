@@ -15,8 +15,12 @@
       </div>
     </div>
     <div>
-      <div id="die1" class="dice">0</div>
-      <div id="die2" class="dice">0</div>
+      <div id="die1" class="dice">1</div>
+      <div id="die2" class="dice">1</div>
+      <div id="die3" class="dice">1</div>
+      <div id="die4" class="dice">1</div>
+      <div id="die5" class="dice">1</div>
+      <div id="die6" class="dice">1</div>
       <button onclick="rollDice()">Roll Dice</button>
       <h2 id="status" style="clear:left;"></h2>
     </div>
