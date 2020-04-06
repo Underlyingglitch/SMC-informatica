@@ -1,4 +1,18 @@
 $(document).ready(function(){
+
+  function checkRoll() {
+    for (var x = 1; x < 7; x++) {
+      var count = 0;
+      for (var i = 0; i < diceArray.length; ++i){
+          if(diceArray[i] == x)
+              count++;
+      }
+      if(diceArray.includes(x)){
+          alert("you rolled"+count+x+"'s");
+      }
+    }
+  }
+
   $('#rollDice').on('click', function(){
     var d1 = Math.floor(Math.random() * 6) + 1;
     var d2 = Math.floor(Math.random() * 6) + 1;
@@ -8,23 +22,9 @@ $(document).ready(function(){
     var d6 = Math.floor(Math.random() * 6) + 1;
     var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
     var diceArray = [d1, d2, d3, d4, d5, d6];
-    var count = 0;
-    function checkRoll(eyes) {
-      count = 0;
-      for (var i = 0; i < diceArray.length; ++i){
-          if(diceArray[i] == eyes)
-              count++;
-      }
-      if(diceArray.includes(eyes)){
-          alert("you rolled"+count+eyes+"'s");
-      }
-    }
-    checkRoll("1");
-    checkRoll("2");
-    checkRoll("3");
-    checkRoll("4");
-    checkRoll("5");
-    checkRoll("6");
+
+    checkRoll();
+
     $('#die1').html(d1);
     $('#die2').html(d2);
     $('#die3').html(d3);
