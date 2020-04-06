@@ -13,6 +13,14 @@ function rollDice(){
     var d5 = Math.floor(Math.random() * 6) + 1;
     var d6 = Math.floor(Math.random() * 6) + 1;
     var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
+    var diceArray = [d1, d2, d3, d4, d5, d6];
+    Object.defineProperties(Array.prototype, {
+    count: {
+        value: function(value) {
+            return this.filter(x => x==value).length;
+        }
+      }
+    });
     die1.innerHTML = d1;
     die2.innerHTML = d2;
     die3.innerHTML = d3;
@@ -20,7 +28,7 @@ function rollDice(){
     die5.innerHTML = d5;
     die6.innerHTML = d6;
     status.innerHTML = "You rolled "+diceTotal+".";
-    if(d1 == d2){
-        status.innerHTML += " DOUBLES! ";
+    if(diceArray.includes(2)){
+        status.innerHTML = diceArray.count(2);
     }
 }
