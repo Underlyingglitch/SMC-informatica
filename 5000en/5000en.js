@@ -15,8 +15,8 @@ function rollDice(){
     var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
     var diceArray = [d1, d2, d3, d4, d5, d6];
     var count2 = 0;
-    for (var i = 0; i < array.length; ++i){
-        if(array[i] == 2)
+    for (var i = 0; i < diceArray.length; ++i){
+        if(diceArray[i] == 2)
             count++;
     }
     die1.innerHTML = d1;
