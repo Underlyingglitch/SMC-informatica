@@ -5,8 +5,8 @@
     <title>5000en</title>
 
     <link rel="stylesheet" href="dist/css/style.css">
-    <script src="5000en.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="dist/js/main.js"></script>
   </head>
   <body>
     <div class="players-view" align="center">
