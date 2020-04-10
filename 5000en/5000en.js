@@ -22,7 +22,7 @@ function rollDice(){
               count++;
       }
       if(diceArray.includes(eyes)){
-          status.innerHTML += "you rolled"+count+eyes+"'s";
+          status.innerHTML +=  "you rolled"+count+eyes+"'s";
       }
     }
     function checkRoll("1");
