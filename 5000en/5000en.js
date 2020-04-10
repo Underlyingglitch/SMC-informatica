@@ -15,6 +15,7 @@ function rollDice(){
     var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
     var diceArray = [d1, d2, d3, d4, d5, d6];
     var count = 0;
+    echo diceArray;
     function checkRoll(eyes) {
       count = 0;
       for (var i = 0; i < diceArray.length; ++i){
